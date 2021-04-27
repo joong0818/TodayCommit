@@ -79,14 +79,53 @@
             #toggle_gnb > ul { overflow: hidden;}
             #toggle_gnb > ul > li {
                 width: 80px; float: left;
+            }
         </style>   
         <!-- 내비게이션(1) -->
         <style>
+            #top_gnb { 
+                overflow: hidden;
+                border-bottom: 1px solid black;
+                background: #B42111; 
+            }
+            #top_gnb > div > a {
+                float: left;
+                width: 25%;
 
+                height: 35px;
+                line-height: 35px;
+                text-align: center;
+                color: white;
+            }
         </style>   
         <!-- 내비게이션(2) -->
         <style>
+            #bottom_gnb {
+                display : table;
+                width: 100%;
+                border-bottom: 1px solid black;
+            }
+            
+            #bottom_gnb > div {
+                display: table-cell;
+                position: relative;
+            }
 
+            #bottom_gnb > div > a {
+                display: block;
+                height: 35px;
+                line-height: 35px;
+                text-align: center;
+            }
+
+            #bottom_gnb > div > a::before {
+                display: block;
+                position: absolute;
+                top: 9px; left: -1px;
+                width: 1px; height: 15px;
+                border-left: 1px solid black;
+                content: '';
+            }
         </style>   
         <!-- 본문 -->
         <style>
@@ -106,6 +145,33 @@
                 <h1>Mobile</h1>
                 <label class="right" for="toggle">Toggle</label>
             </header>
+            <div id="toggle_gnb_wrap">
+                <div id="toggle_gnb">
+                    <ul>
+                        <li><a href="#">버튼</a></li>
+                        <li><a href="#">버튼</a></li>
+                        <li><a href="#">버튼</a></li>
+                        <li><a href="#">버튼</a></li>
+                        <li><a href="#">버튼</a></li>
+                        <li><a href="#">버튼</a></li>
+                        <li><a href="#">버튼</a></li>
+                        <li><a href="#">버튼</a></li>
+                    </ul>
+                </div>
+            </div>
+            <nav id="top_gnb">
+                <div><a href="#">버튼</a></div>
+                <div><a href="#">버튼</a></div>
+                <div><a href="#">버튼</a></div>
+                <div><a href="#">버튼</a></div>
+            </nav>
+            <nav id="bottom_gnb">
+                <div><a href="#">버튼</a></div>
+                <div><a href="#">버튼</a></div>
+                <div><a href="#">버튼</a></div>
+                <div><a href="#">버튼</a></div>
+                <div><a href="#">버튼</a></div>
+            </nav>
         </div>
     </body>
 </html>
