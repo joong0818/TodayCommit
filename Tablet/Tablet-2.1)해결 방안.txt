@@ -1,0 +1,2 @@
+너비의 합이 화면보다 클 때 >> 레이아웃 깨짐
+해결 방법 > margin-right 와 padding-right 속성을 이용 
