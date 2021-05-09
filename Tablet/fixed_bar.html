@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bar</title>
+        <style>
+            * { margin: 0; padding: 0; }
+            html, body {
+                height: 100%;
+            }
+
+            #top_bar {
+                position: fixed;
+                top: 0; left: 0; right: 0;
+                height: 50px;
+
+                background: red;
+            }
+
+            #bottom_bar {
+                position: fixed;
+                bottom: 0; left: 0; right: 0;
+                height: 50px;
+
+                background: red;
+            }
+
+            #left_bar {
+                position: fixed;
+                top: 50px; bottom: 50px; 
+                left: 0; width: 50px;
+                
+
+                background: blue;
+            }
+
+            #right_bar {
+                position: fixed;
+                top: 50px; bottom: 50px; 
+                right: 0; width: 50px;
+                
+
+                background: blue;
+            }
+
+            article {
+                margin-top: 50px;
+                margin-bottom: 50px;
+                margin-left: 50px;
+                margin-right: 50px;
+            }
+        </style>
+
+    </head>    
+    <body>
+        <div id='top_bar'>
+            <h1>top</h1>
+        </div>
+        <div id='bottom_bar'>
+            <h1>bottom</h1>
+        </div> 
+        <div id='left_bar'>
+            <h1>A</h1>
+        </div> 
+        <div id='right_bar'>
+            <h1>B</h1>
+        </div> 
+        <article>
+            <h1>와!</h1>
+            <p>asdqweasdqweasdqwe</p>
+            <p>asdqweasdqweasdqwe</p>
+            <p>asdqweasdqweasdqwe</p>
+            <p>asdqweasdqweasdqwe</p>
+        </article>    
+    </body>
+</html>    
