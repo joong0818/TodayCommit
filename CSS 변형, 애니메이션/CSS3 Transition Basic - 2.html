@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS3 Transition Basic</title>
+        <style>
+            .box {
+                width: 100px; height: 100px;
+                background-color: orange;
+
+                -ms-transition-duration: 2s;
+                -moz-transition-duration: 2s;
+                -o-transition-duration: 2s;
+                -webkit-transition-duration: 2s;
+                transition-duration: 2s;     
+            }
+
+            .box:hover {
+                width: 200px;
+                height: 300px;
+            }
+
+            .box:active {
+                background-color: red;
+            }
+        </style>
+        <style>
+            #Graph {
+                width: 610px;
+                border: 3px solid black;
+
+            }
+
+            .bar {
+                width: 10px; height: 50px;
+                background-color: orange;
+                margin: 5px;
+
+
+                -ms-transition-duration: 5s;
+                -moz-transition-duration: 5s;
+                -o-transition-duration: 5s;
+                
+                -webkit-transition-duration: 5s;
+                transition-duration: 5s;
+            }
+
+            #Graph:hover .bar {
+                width: 600px;
+            }
+        </style>
+        
+    </head>
+    <body>
+        <div class="box"></div>
+
+        <h1>CSS3 Transition Graph</h1>
+        <div id='Graph'>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </body>
+</html>
