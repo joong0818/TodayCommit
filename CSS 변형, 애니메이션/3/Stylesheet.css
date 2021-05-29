@@ -1,5 +1,11 @@
 * { margin: 0; padding: 0; }
-body { position: relative; }
+#container { 
+        position: relative;
+        margin: 0 auto;
+        border: 1px solid black;
+        height: 200px;
+        width: 700px;
+    }
 #box {
     position : absolute;
     width : 200px; height: 200px;
@@ -12,7 +18,39 @@ body { position: relative; }
     animation-timing-function: linear ;
 }
 
+#box2 {
+    position : absolute;
+    width : 200px; height: 200px;
+    border-radius: 100px;
+    text-align: center;
+    background: linear-gradient(#cb60b3 0%, #db36a4 100%);
+
+    animation-name: rint;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear ;
+}
+
+#box3 {
+    position : absolute;
+    width : 200px; height: 200px;
+    border-radius: 100px;
+    text-align: center;
+    background: linear-gradient(#cb60b3 0%, #db36a4 100%);
+
+    animation-name: rint;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear ;
+}
+
+
 #box > h1 { line-height: 200px; }
+
+#box2 > h1 { line-height: 200px; }
+
+#box3 > h1 { line-height: 200px; }
 
 @keyframes rint {
     from {
@@ -26,4 +64,11 @@ body { position: relative; }
         left: 500px;
         transform: rotate(360deg);
     }
+}
+
+.explain {
+    font-family: 나눔손글씨 펜;
+    font-size: 24px;
+    text-align: center;
+    margin: 10px 0;
 }
