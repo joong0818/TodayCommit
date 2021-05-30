@@ -45,12 +45,31 @@
     animation-timing-function: linear ;
 }
 
+#box4 {
+    position : absolute;
+    width : 200px; height: 200px;
+    border-radius: 100px;
+    text-align: center;
+    background: linear-gradient(#cb60b3 0%, #db36a4 100%);
+
+    animation-name: rint;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear ;
+}
+
+#box4:hover {
+    animation-play-state: paused;
+}
 
 #box > h1 { line-height: 200px; }
 
 #box2 > h1 { line-height: 200px; }
 
 #box3 > h1 { line-height: 200px; }
+
+#box4 > h1 { line-height: 200px; }
 
 @keyframes rint {
     from {
