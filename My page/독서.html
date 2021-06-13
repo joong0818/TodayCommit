@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="독서/style.css">
+        <script src='script.js'></script>
+
+        <audio id='audio_play' src='sound.mp3'></audio> 
+        <script type="text/javascript"> 
+        function play() { 
+            var audio = document.getElementById('audio_play'); 
+            if (audio.paused) { 
+                audio.play(); 
+            }else{ 
+                audio.pause(); 
+                audio.currentTime = 0 
+            } 
+        } 
+        </script>
+
+
+    </head>
+    <body onclick="play()">
+        
+       
+        <header>
+            <nav id='title'>
+                <ul>
+                    <li class="first"><a href="index.html"><b>Hobby</b></a></li>
+
+
+                    <li class="two"><a href="index.html">Main</a></li>
+                    <li><a href="독서.html">Book</a></li>
+                    <li><a href="바다.html">Ocean</a></li>
+                    <li class="last"><a href="웹.html">Web</a></li>
+                    
+                </ul>
+
+            </nav>
+        </header>
+        
+        <div id="main">
+            <h1>Book</h1>
+            <h2>Build up your mental food.</h2>
+        </div>
+        <div id="video">
+            <video autoplay controls width="640" height="320"  loop muted>
+                <source src="독서/독서.mp4" type="video/mp4">
+            </video>
+            <h1><strong>독서를 통해 마음의 안정을 찾아보세요.</strong></h1>
+            <p>  제 주된 취미중 하나인 독서는, 책을 통해 세상을 다시 바라보고 나를 다시 바라보는 하나의 의식과도 같습니다. 
+                책을 읽음으로써 알지 못했던 세상의 많은 지식들을 습득하고 상상하면서, 내가 할 수 있는 영역들을 끊임없이 넓혀나가는
+                무한한 성장의 원동력이기도 하며, 책이 주는 의미로 하여금 나에 대해서 더 깊고 순수하게 바라볼 수 있는 방법을 제시해주기 때문입니다.
+
+            </p>
+            <p>  전 세계적으로 코로나가 유행하여 인간의 발걸음이 멈춘 이 때, 책을 읽음으로써 정신적인 발걸음을 내딛는 기회를 가져보는건 어떨까요?</p>
+            
+        </div>
+    </body>
+</html>

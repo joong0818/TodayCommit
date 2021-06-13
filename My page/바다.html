@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="바다/style.css">
+        <script src='script.js'></script>
+
+        <audio id='audio_play' src='sound.mp3'></audio> 
+        <script type="text/javascript"> 
+        function play() { 
+            var audio = document.getElementById('audio_play'); 
+            if (audio.paused) { 
+                audio.play(); 
+            }else{ 
+                audio.pause(); 
+                audio.currentTime = 0 
+            } 
+        } 
+        </script>
+
+
+    </head>
+    <body onclick="play()">
+        
+       
+        <header>
+            <nav id='title'>
+                <ul>
+                    <li class="first"><a href="index.html"><b>Hobby</b></a></li>
+
+
+                    <li class="two"><a href="index.html">Main</a></li>
+                    <li><a href="독서.html">Book</a></li>
+                    <li><a href="바다.html">Ocean</a></li>
+                    <li class="last"><a href="웹.html">Web</a></li>
+                    
+                </ul>
+
+            </nav>
+        </header>
+        
+        <div id="main">
+            <h1>Ocean</h1>
+            <h2>The Vast Beauty</h2>
+        </div>
+        <div id="video">
+            <video autoplay controls width="640" height="320"  loop muted>
+                <source src="바다/바다.mp4" type="video/mp4">
+            </video>
+            <h1><strong>생명이 숨쉬는 곳, 바다</strong></h1>
+            <p>  지평선 너머로 가늠할 수 없을 만큼 방대한 바다는, 상상하는 것 만으로도 위대함과 상쾌함을 줍니다.
+                꽉 막힌 것 같은 삶 속에서 숨통을 트이게 해 주는 바다를 생각하는 것은, 그 크기 만큼이나 무한한 호흡을 생각하게 하는 취미 중 하나가 되었습니다.
+                호흡을 가다듬고, 바다와 하나 되어 생각을 정리해보는것은 어떨까요? 
+
+            </p>
+            <p>  여느 때보다 삶이 답답해지기 쉬운 지금입니다. 언제나 위대함과 웅장한 느낌을 주는 바다를 생각하며 색다른 기분을 가져봅시다.</p>
+            
+        </div>
+    </body>
+</html>

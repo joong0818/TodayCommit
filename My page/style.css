@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+
+* { margin: 0 ; padding: 0; box-sizing: border-box;}
+html { height: 100%; }
+body { 
+    height: 100%; 
+    background-color: black;
+
+    min-width: 1200px;
+    min-height: 800px;
+}
+
+#main {
+    position: relative;
+    height: 100%;
+    width: 50%;
+    float: left;
+}
+
+.title {
+    position: absolute;
+    
+    width: 600px;
+    height: 600px;
+    top: 50%;
+    left: 50%;
+    margin-top: -300px;
+    margin-left: -300px;
+
+
+    border: 2px solid white;
+    border-radius: 50%;
+
+    font-family: 'Roboto Mono';
+
+    color: white;
+}
+
+.title h1 {
+    text-align: center;
+    line-height: 600px;
+    font-size: 128px;
+}
+
+a { 
+    text-decoration: none;
+    color: white;
+}
+
+#sub {
+    position: relative;
+    height: 100%;
+    width: 50%;
+    float: left;
+
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.section {
+    margin: auto;
+    border: 1px solid white;
+    width: 400px;
+    height: 150px;
+
+    font-family: 'Roboto Mono';
+    color: white;
+
+    font-size: 64px;
+
+    text-align: center;
+    line-height: 150px;
+
+    cursor: pointer;
+
+    
+    
+    
+}
+
+.section:hover {
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+
+}
+
+.book {
+    background-color: #A6785D;
+    
+}
+
+.Ocean {
+    background-color: #032859;
+}
+
+.Web {
+    background-color: #F0F6F7;
+    color: black;
+}
+
+.what {
+    background-color: #C9DFF2;
+    color: black;
+}

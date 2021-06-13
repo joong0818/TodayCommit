@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="웹/style.css">
+        <script src='script.js'></script>
+
+        <audio id='audio_play' src='sound.mp3'></audio> 
+        <script type="text/javascript"> 
+        function play() { 
+            var audio = document.getElementById('audio_play'); 
+            if (audio.paused) { 
+                audio.play(); 
+            }else{ 
+                audio.pause(); 
+                audio.currentTime = 0 
+            } 
+        } 
+        </script>
+
+
+    </head>
+    <body onclick="play()">
+        
+       
+        <header>
+            <nav id='title'>
+                <ul>
+                    <li class="first"><a href="index.html"><b>Hobby</b></a></li>
+
+
+                    <li class="two"><a href="index.html">Main</a></li>
+                    <li><a href="독서.html">Book</a></li>
+                    <li><a href="바다.html">Ocean</a></li>
+                    <li class="last"><a href="웹.html">Web</a></li>
+                    
+                </ul>
+
+            </nav>
+        </header>
+        
+        <div id="main">
+            <h1>Web</h1>
+            <h2>Create Your Page!</h2>
+        </div>
+        <div id="video">
+            <video autoplay controls width="640" height="320"  loop muted>
+                <source src="웹/웹.mp4" type="video/mp4">
+            </video>
+            <h1><strong>당신의 무한한 상상력을 보여주세요!</strong></h1>
+            <p>  가상 세계가 가지는 무한한 가능성은 전 세계적으로 주목하고 있는, 차세대 산업의 무대일 것입니다.
+                이러한 무대 위에서 당신이 가진 것들을 보다 간편하게 보여줄 수 있다면 어떠신가요? 최근들어 제가 가장 관심을 갖고,
+                즐거움을 느끼는 웹 코딩은 이러한 고민을 말끔하게 해결해주고, 나아가 당신을 표현할 수 있는 아주 좋은 수단이 될 것입니다.
+                
+
+            </p>
+            <p>  당신의 상상력과 잠재력을 마음껏 펼쳐보세요!</p>
+            
+        </div>
+    </body>
+</html>
