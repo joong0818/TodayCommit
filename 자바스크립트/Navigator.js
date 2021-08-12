@@ -1,0 +1,11 @@
+document.write("");
+document.write("<br> * 브라우저의 이름을 알려주는 appName    : ");
+document.write("<br><h3>", navigator.appName);
+document.write("</h3><br> * 브라우저의 이름을 알려주는 appCodeName    : ");
+document.write("<br><h3>", navigator.appCodeName);
+document.write("</h3><br> * 플랫폼 정보를 알려주는 platform    : ");
+document.write("<br><h3>", navigator.platform);
+document.write("</h3><br> * 사용자의 정보를 알려주는 userAgent    : ");
+document.write("<br><h3>", navigator.userAgent);
+document.write("</h3><br> * 브라우저의 버전을 알려주는 appVersion    : ");
+document.write("<br><h3>", navigator.appVersion);
