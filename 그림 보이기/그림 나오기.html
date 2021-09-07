@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style type="text/css">
+            #layer1 {
+                position: absolute;
+                left: 1000; top: 500;
+                width: 1000; height: 500;
+                visibility: hidden;
+            }
+
+            #layer2 {
+                position: absolute;
+                left: 1200; top: 500;
+                width: 1000; height: 500;
+                visibility: hidden;
+            }
+        </style>
+        <script language='javascript'>
+            function showlayer(id) {
+                document.all[id].style.visibility='visible';
+            }
+
+            function hidelayer(id) {
+                document.all[id].style.visibility='hidden';
+            }
+        </script>
+    </head>
+    <body>
+        <div id='layer1'>
+            <img src='red.jpg'>
+        </div>
+        <div id='layer2'>
+            <img src="blue.jpg">
+        </div>
+
+        <h1>
+            &nbsp; &nbsp; &nbsp; &nbsp;
+            <a href="#" onmouseover="showlayer('layer1')"
+                onmouseout="hidelayer('layer1')">
+            Red
+            </a>
+            &nbsp; &nbsp; &nbsp; &nbsp;
+            <a href="#" onmouseover="showlayer('layer2')"
+                onmouseout="hidelayer('layer2')">
+            Blue
+            </a>
+        </h1>
+    </body>
+</html>
