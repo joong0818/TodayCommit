@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style type="text/css">
+            .box {
+                position: absolute;
+            }
+            
+            #layer1 {
+                position: relative;
+                left: 1000; top: 500;
+                width: 1000; height: 500;
+                visibility: hidden;
+                border: 1px solid black;
+            }
+
+            #layer2 {
+                position: relative;
+                left: 1200; top: 500;
+                width: 1000; height: 500;
+                visibility: hidden;
+                border: 1px solid black;
+            }
+        </style>
+        <script language='javascript'>
+            function showlayer(id) {
+                document.all[id].style.visibility='visible';
+            }
+
+            function hidelayer(id) {
+                document.all[id].style.visibility='hidden';
+            }
+        </script>
+    </head>
+    <body>
+        <div class='box'>
+            
+
+            <h1>
+                &nbsp; &nbsp; &nbsp; &nbsp;
+                <a href="#" onmouseover="showlayer('layer1')"
+                    onmouseout="hidelayer('layer1')">
+                Red
+                </a>
+                &nbsp; &nbsp; &nbsp; &nbsp;
+                <a href="#" onmouseover="showlayer('layer2')"
+                    onmouseout="hidelayer('layer2')">
+                Blue
+                </a>
+            </h1>
+            <div id='layer1'>
+                <img src='red.jpg'>
+            </div>
+            <div id='layer2'>
+                <img src="blue.jpg">
+            </div>
+        </div>
+    </body>
+</html>
