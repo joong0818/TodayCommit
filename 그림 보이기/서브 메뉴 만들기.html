@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style type="text/css">
+        body {
+            font-family: verdena;
+            line-height: 180%;
+            
+        }
+
+        span {
+            font-weight: bold;
+            font-size: 12pt;
+        }
+        
+        #menu {
+            position: absolute;
+            width: 200px; height: 42px;
+            background-color: pink;
+            border: 2px solid red;
+            padding: 5px;
+            overflow: hidden;
+        }
+        </style>
+
+        <script language='javascript'>
+            var method = 'show';
+
+            function toggleMenu() {
+                if(method == 'show') {
+                    method = 'hide';
+                }
+                else {
+                    method = 'show';
+                }
+                handleMenu(method);
+            }
+
+            function handleMenu(method) {
+                var offset = 5;
+                var objMenu = document.all['menu'];
+                if (method == 'show') {
+                    if (parseInt(objMenu.style.height) < 200) {
+                        objMenu.style.height = parseInt(objMenu.style.height) + offset + 'px';
+                        setTimeout("handleMenu('" + method + "')" , 10);
+                    }
+                }
+                else {
+                    if (parseInt(objMenu.style.height) > 42) {
+                        objMenu.style.height = parseInt(objMenu.style.height) - offset + 'px';
+                        setTimeout("handleMenu('" + method + "')" , 10);
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div id='menu'>
+            <span onclick="toggleMenu()" style="cursor:hand"> 방 송 사 </span>
+            <br><a href="#"> M B C </a>
+            <br><a href="#"> K B S </a>
+            <br><a href="#"> S B S </a>
+            <br><a href="#"> E B S </a>
+            <br><a href="#"> 으악 </a><br>
+        </div>
+    </body>
+</html>
