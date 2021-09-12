@@ -1,0 +1,26 @@
+의문 1 :
+
+function A(){
+                let x = document.getElementById('menu').style
+                x.height='200px';
+                
+
+
+            }
+            
+        
+변수를 함수의 내부에서 선언하면 제대로 동작함.
+
+
+let x = document.getElementById('menu').style
+
+function A(){
+                x.height='200px';
+                
+
+
+            }
+            
+반대로, 함수 밖에서 변수를 선언하고 변수를 사용했을땐, 작동하지 않았음.
+
+변수의 선언 위치에 따라 변수 인식 유무가 생겼음            
