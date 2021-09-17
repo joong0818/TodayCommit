@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style type="text/css">
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            line-height: 180%;
+            
+        }
+
+        span {
+            font-weight: bold;
+            font-size: 12pt;
+
+        }
+        
+        #menu {
+            position: absolute;
+            width: 200px; 
+            background-color: pink;
+            border: 2px solid red;
+            padding: 5px;
+            overflow: hidden;
+        }
+
+        #b {
+            color: white;
+            text-decoration: none;
+        }
+        </style>
+
+        <script>
+            
+
+            function A(){
+                
+                var x = document.getElementById('menu').style;
+                var y = x.height;
+                alert(y);
+
+                alert(parseInt(x.height));
+
+                if(parseInt(x.height) < 200){
+                    document.getElementById('menu').style.height = parseInt(x.height) + 20 + 'px';
+
+                }
+                else {
+                    document.getElementById('menu').style.height = '47px';
+                }
+                
+
+
+            }
+            
+
+        </script>
+    </head>
+    <body>
+        <div id='menu' style="height: 47px;">
+            <button type="button" onClick='A()' > 방 송 사 </button>
+            <br><a href="#" id='b'> M B C </a>
+            <br><a href="#"> K B S </a>
+            <br><a href="#"> S B S </a>
+            <br><a href="#"> E B S </a>
+            <br><a href="#"> 으악 </a><br>
+        </div>
+    </body>
+</html>
