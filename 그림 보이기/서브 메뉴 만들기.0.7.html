@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style type="text/css">
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            line-height: 180%;
+            box-sizing: border-box;
+            
+        }
+
+        div{
+            position: relative;
+        }
+
+        span {
+            font-weight: bold;
+            font-size: 12pt;
+
+        }
+        
+        #menu {
+            position: absolute;
+            width: 200px; 
+            background-color: white;
+            border: 2px solid black;
+            padding: 5px;
+            overflow: hidden;
+            margin: 10px;
+        }
+
+        #b {
+            color: white;
+            text-decoration: none;
+        }
+
+        .good {
+            box-sizing: border-box;
+
+            margin: 10px;
+        }
+
+        #cont {
+            border: 2px solid black;
+            margin: 10px;
+            width: 150px;
+            height: 80px;
+            position: absolute;
+
+            
+            left: 250px;
+        }
+        </style>
+
+        <script>
+            
+
+            function A(){
+                
+                var x = document.getElementById('menu').style;
+                var y = x.height;
+               
+                
+                
+                if(parseInt(x.height) < 200) {
+                    x.height = parseInt(x.height) + 20 + 'px'
+                }
+                
+                animate = setTimeout(A,20);
+                
+
+
+            }
+            
+
+        </script>
+    </head>
+    <body>
+        <div id='menu' style="height: 40px;">
+            <button type="button" onClick='A()' class="good" > 방 송 사 </button>
+            <br><a href="#" id='b'> M B C </a>
+            <br><a href="#"> K B S </a>
+            <br><a href="#"> S B S </a>
+            <br><a href="#"> E B S </a>
+            <br><a href="#"> 으악 </a><br>
+        </div>
+        <div id="cont"> 
+            <input type="range" id='control' name="control" min='40' max='400' step="10">
+            <label for="control">컨트롤 바</label>
+        </div>
+    </body>
+</html>
