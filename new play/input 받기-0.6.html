@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                box-sizing: border-box;
+                
+            }
+            .box {
+                position: relative;
+                margin: 0 auto;
+                border: solid 1px black;
+                height: 200px;
+                width: 50%;
+                display: flex;
+                padding: 15px;
+                flex-direction: column;
+            }
+            .n {
+                line-height: 15px;
+                height: 15px;
+                border: 1px solid gray;
+
+                
+            }
+        </style>
+        <script>
+            var good = {
+                so : 'easy'
+            }
+            var a1 = undefined
+            var a2 = undefined
+
+            function that() {
+                var t = document.getElementById('name').value;
+                document.getElementById('wow').innerText = t;
+
+                a1 = document.getElementById('name').value;
+            }
+
+            function B1() {
+                alert(a1);
+            }
+
+            function that2() {
+                var t = document.getElementById('name2').value;
+                document.getElementById('wow2').innerText = t;
+
+                a2 = document.getElementById('name2').value;
+
+            }
+
+            function B2() {
+                alert(a2);
+            }
+
+            
+
+            function that3() {
+                var t = document.getElementById('name3').value;
+                document.getElementById('wow3').innerText = t;
+
+            }
+
+            
+
+            function C1() {
+                
+                alert(a1);
+                if (a1 !== undefined && a2 !== undefined) {
+                    alert('wow!');
+                }
+                else if (a1 === undefined && a2 === undefined){
+                    alert('Please, write at all');
+                }
+                else if(a1 == undefined){
+                    alert('Please, write in \'a1\'');
+                }
+                else if(a2 == undefined){
+                    alert('Please, write in \'a2\'');
+                }
+                
+            }
+
+            function C2(a, b){
+                good[a] = b;
+            }
+
+            function C3(){
+                for (let c in good){
+                    alert(good[c]);
+                }
+            }
+
+        </script>
+    </head>
+    <body>
+        <div class="box">
+            <input class='n' id='name' onchange="that()">
+            <div id='wow'></div>
+
+            <button onclick="B1()">Click</button>
+        </div>
+
+        <div class="box">
+            <input class='n' id='name2' onchange="that2()">
+            <div id='wow2'></div>
+
+            <button onclick="B2()">Click</button>
+
+            <button onclick="C2(a1, a2)">Plus</button>
+            <button onclick="C3()">Alert</button>
+        </div>
+
+        <div class="box">
+            <input class="n" id='name3' onkeyup="that3()">
+            <div id='wow3'></div>
+
+        </div>
+
+        <div class="box">
+            <button onclick="C1()">Click</button>
+        </div>
+    </body>
+</html>
