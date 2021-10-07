@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                box-sizing: border-box;
+                
+            }
+            .box {
+                position: relative;
+                margin: 0 auto;
+                border: solid 1px black;
+                height: 200px;
+                width: 50%;
+                display: flex;
+                padding: 15px;
+                flex-direction: column;
+            }
+            .n {
+                line-height: 15px;
+                height: 15px;
+                border: 1px solid gray;
+
+                
+            }
+        </style>
+        <script>
+            function addoption(){
+                let select = document.querySelector('#select');
+                var objOption = document.createElement('option');
+                objOption.text = select.length + 1 + '깡' ;
+                objOption.value = select.length + 1;
+                select.option.add(objOption);
+            }
+        </script>
+    </head>
+    <body>
+        <div class='box'>
+            <select id='abc'>
+                <option value="새우깡">새우깡</option>
+                <option value="감자깡">감자깡</option>
+            </select>
+            <button id='addbutton1' onclick="addoption()">
+            옵션 추가</button>
+        </div>
+    </body>
+</html>
